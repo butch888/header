@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 header {
@@ -12,13 +13,33 @@ header {
     background-color: #fff;
     border-bottom: 1px solid #F8E0FB;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
 }
 
 header img {
-    margin: 18px auto;
     width: 151px;
     height: 40px;
+    margin-right: 32px;
 }
+
+
+.menu__wrapper {
+    display: flex;
+}
+.menu__wrapper a {
+    color: var(--Black, #000);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    opacity: 0.5;
+    text-decoration: none;
+    display: flex;
+    margin-right: 32px;
+    white-space: nowrap;
+}
+
 
 
 
