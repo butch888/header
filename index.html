@@ -237,8 +237,38 @@
             </div>
         </div>
     </section>
-    
 
+    <!-- start section__qanda -->
+    <section class="section__qanda">
+        <div class="qa__wrapper">
+            <p>How much does Zeus UI cost?</p>
+            <svg style="transition: .3s;" id="btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z" fill="#9F7AEA"/>
+              </svg>
+            <span class="span" style="max-height: 0px;">This FAQ section is now in the expanded state, so you see how it looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+        </div>
+
+        <script>
+            let btn = document.querySelector('#btn');
+            let span = document.querySelector('.span');
+            let qa__wrapper = document.querySelector('.qa__wrapper')
+
+            btn.addEventListener('click', function() {
+                if (span.style.maxHeight === '0px') {
+                    span.style.maxHeight = span.scrollHeight + 'px';
+                    qa__wrapper.style.background = 'white';
+                    btn.style.transform = 'rotate(180deg)';
+                } else {
+                    span.style.maxHeight = 0;
+                    qa__wrapper.style.background = '#fcfaff';
+                    btn.style.transform = 'rotate(0deg)';
+                }
+            });
+        </script>
+    </section>
+    <!-- end section__qanda -->
+    
+    
     <script src="main.js"></script>
 </body>
 </html>
