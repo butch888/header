@@ -11,8 +11,9 @@ body {
 }
 /* start header */
 header {
-    width: 100%;
+    max-width: 1440px;
     height: 76px;
+    margin: 0 auto;
     background-color: #fff;
     border-bottom: 1px solid #F8E0FB;
     display: flex;
@@ -236,6 +237,7 @@ header img {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 .section__collection .wrapper {
@@ -294,7 +296,7 @@ header img {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding-bottom: 220px;
+    padding-bottom: 100px;
 }
 
 .provide__wrapper p {
@@ -321,16 +323,27 @@ header img {
 .section__qanda {
     display: flex;
     justify-content: center;
-    margin-bottom: 500px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section__qanda .wrapper1 {
+   margin-right: 32px;
+}
+
+.section__qanda .wrapper2 {
+   
 }
 
 .qa__wrapper {
     padding: 24px;
     border-radius: 15px;
-    border: 1px solid var(--purple-30, #D6BCFA);
+    border: 2px solid var(--purple-30, #D6BCFA);
     background: #fcfaff;
     position: relative;
     max-width: 412px;
+    height: fit-content;
+    margin-bottom: 24px;
 }
 
 .qa__wrapper p {
@@ -340,7 +353,7 @@ header img {
     font-weight: 500;
     line-height: 26px; /* 130% */
     opacity: 0.8;
-    margin: 0;
+    margin: 0 15px 0 0;
     padding-bottom: 12px;
 }
 
@@ -359,7 +372,165 @@ header img {
     position: absolute;
     right: 24px;
     top: 24px;
+    cursor: pointer;
 }
+
+.section__qanda .text__wrapper {
+    display: flex;
+    flex-flow: column;
+    margin-right: 32px;
+    max-width: 412px;
+}
+
+.section__qanda h2 {
+    color: var(--Black, #000);
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px; /* 133.333% */
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.section__qanda h3 {
+    color: var(--Accent, #532C59);
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0;
+}
+/* end section__qanda */
+
+/* start section__ready */
+.section__ready {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 90px;
+    margin-bottom: 160px;
+}
+.ready__wrapper {
+    border-radius: 60px;
+    border: 1px solid var(--purple-30, #D6BCFA);
+    background: #FCFAFF;
+    box-shadow: 0px 0px 50px 0px #F8E0FA inset;
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 1300px;
+    height: 446px;
+}
+
+.ready__wrapper  img{
+    position: absolute;
+}
+
+.ready__wrapper  img:first-child {
+    left: 0
+}
+
+.ready__wrapper img:nth-child(2) {
+    right: 0;
+}
+
+.ready__wrapper h2 {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.ready__wrapper h3 {
+    color: var(--Accent, #532C59);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.ready__wrapper button {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+    background-color: #532C59;
+    color: var(--White, #FFF);
+    border-radius: 15px;
+    outline: none;
+    padding: 16px 20px;
+    cursor: pointer;
+}
+/* end section__ready */
+
+/* start footer */
+footer {
+    max-width: 1440px;
+    margin: 80px auto 0;
+    display: flex;
+    flex-flow: column;
+    padding: 0 70px;
+}
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 41px;
+    border-bottom: 1px solid #CCD5DF;
+}
+
+footer a {
+    color: var(--Black, #000);
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+footer .top .a__wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+footer .bottom {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--Black, #000);
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
